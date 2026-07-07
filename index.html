@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>吹上プログラミング教室</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts（Noto Sans JP） -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- アイコン用Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', 'Yu Gothic', 'Meiryo', sans-serif;
+            background: #f6f7fb;
+            color: #232323;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(90deg, #30507a 0%, #5a8bbe 100%);
+            color: #fff;
+            padding: 2.5em 1em 1.5em 1em;
+            text-align: center;
+            letter-spacing: 0.05em;
+            box-shadow: 0 2px 8px rgba(48,80,122,0.06);
+        }
+        header h1 {
+            font-size: 2.2em;
+            font-weight: 700;
+            margin: 0.2em 0 0.3em 0;
+            letter-spacing: 0.08em;
+        }
+        header p {
+            font-size: 1.08em;
+            margin: 0;
+            opacity: 0.85;
+        }
+        main {
+            max-width: 760px;
+            margin: 2.5em auto 2em auto;
+            background: #fff;
+            padding: 2.5em 2em;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(48,80,122,0.07);
+        }
+        h2 {
+            color: #30507a;
+            font-size: 1.35em;
+            border-left: 5px solid #5a8bbe;
+            padding-left: 0.7em;
+            margin-top: 2.2em;
+            margin-bottom: 1em;
+            font-weight: 700;
+        }
+        ul, ol {
+            padding-left: 1.2em;
+            line-height: 1.8em;
+        }
+        .section {
+            margin-bottom: 2em;
+        }
+        .lang-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.7em;
+            margin: 0.5em 0 1em 0;
+        }
+        .lang-list span {
+            background: #eaf0fa;
+            color: #30507a;
+            padding: 0.26em 0.95em;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: 500;
+            border: 1px solid #d2e1f0;
+            display: flex;
+            align-items: center;
+            gap: 0.4em;
+        }
+        .video-list a {
+            color: #3866a3;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .video-list a:hover {
+            color: #1c355a;
+            text-decoration: underline;
+        }
+        .contact {
+            background: #f0f4fa;
+            padding: 1.2em 1em;
+            border-radius: 7px;
+            border-left: 4px solid #5a8bbe;
+        }
+        .contact a {
+            color: #3866a3;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .fee-list {
+            line-height: 1.8em;
+        }
+        .note {
+            font-size: 0.97em;
+            color: #555;
+            margin-top: 0.3em;
+        }
+        footer {
+            text-align: center;
+            color: #a0a5af;
+            padding: 1.5em 0 1em 0;
+            font-size: 0.98em;
+            background: none;
+
+        }
+        /* アイコンの色 */
+        .fa-solid, .fa-brands {
+            color: #5a8bbe;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 1.2em 0.7em;
+            }
+            header {
+                padding: 1.5em 0.6em 1em 0.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fa-solid fa-laptop-code"></i> 吹上プログラミング教室</h1>
+        <p>名古屋市吹上で開業<br>副業エンジニアが教える、ものづくりのためのプログラミング教室</p>
+    </header>
+    <main>
+        <section class="section">
+            <h2><i class="fa-solid fa-briefcase"></i> 事業内容</h2>
+            <ul>
+                
+                <li><b>大人・子供向けプログラミング教室</b></li>
+                <ul>
+                <div class="note">下記からご興味がある項目を受講できます。ご相談ください。</div>
+                <li>ラズパイ・Arduinoによる電子工作レクチャー</li>
+                <li>ご希望の言語のプログラミング指導</li>
+                <li>GeminiなどAI活用コーディング講座</li>
+                <li>マイクラのコマンド講座、レッドストーン回路講座</li>
+                </ul>
+                <br>
+                <li><b>3Dプリンタ・レーザーカッター制作補助</b>
+                    <ul><li>持ち込みデータで利用だけもOK
+                        <br>CAD技術必須。簡単なものはレクチャー可能</li></ul></li><br>
+                
+                
+                <li><b>Webデザイン・制作代行</b></li><br>
+                <li><b>基板設計・中国への基板発注サポート</b></li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2><i class="fa-solid fa-code"></i> 扱える言語・技術</h2>
+            <div class="lang-list">
+                <span><i class="fa-solid fa-c"></i> C言語</span>
+                <span><i class="fa-brands fa-python"></i> Python</span>
+                <span><i class="fa-solid fa-table"></i> VBA</span>
+                <span><i class="fa-solid fa-hashtag"></i> C#</span>
+                <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span><i class="fa-solid fa-file-code"></i> HTML</span>
+                <span><i class="fa-brands fa-google"></i> GAS</span>
+            </div>
+        </section>
+        <section class="section">
+            <h2><i class="fa-solid fa-calendar-days"></i> 営業日・時間・場所</h2>
+            <ul>
+                <li>土曜日：9:00-18:00　※</li>
+                <li>日曜日：15:00-18:00　※</li>
+            </ul>
+            <div class="note">※副業として運営しています。上記以外のご希望のお時間はお気軽にご相談ください。</div><br>
+            <p><b>場所：</b> 名古屋市吹上区1-10</p>
+            <div class="note">※オンラインも可能です。</div>
+        </section>
+        <section class="section">
+            <h2><i class="fa-solid fa-heart"></i> 教室の想い</h2>
+            <p>
+                <b>『ものづくりの楽しさを地域の方々や次世代に伝えたい。』</b><br>
+                そんな想いで教室を「えいっ」と開きました。<br><br>
+                ものづくりの楽しさを一緒に感じ、自分が作りたいものを形にしませんか？<br><br>
+                何を作ったらいいか分からない・・・？<br>
+                私も同じでした。でも、やれることが増えていくと作りたいものが自然と湧き出てきます。不思議。<br><br>
+                さらに、作ったもので人を笑顔にできたら素敵ですよね。<br><br>
+                <b>PC未経験の大人から、エンジニア志望のお子様まで大歓迎です。</b><br><br>
+                3Dプリンタ・レーザーカッターもありますよ！
+            </p>
+        </section>
+        <section class="section">
+            <h2><i class="fa-solid fa-yen-sign"></i> 受講料・持ち物</h2>
+            <ul class="fee-list">
+                <li>大人：<b>3,000円 / 1時間</b>（体験無料期間あり）</li>
+                <li>学生：<b>1,500円 / 1時間</b>（体験無料期間あり）</li>
+                <li>持ち物：ノートPC（無くてもOK）</li>
+            </ul>
+        </section>
+        <section class="section" style="display:none">
+            <h2><i class="fa-solid fa-award"></i> 過去の実績・作ったもの</h2>
+            <div class="video-list">
+                <!-- サンプル動画URL。ご自身の動画URLに差し替えてください -->
+                <p><a href="https://www.youtube.com/watch?v=XXXXXXXX" target="_blank"><i class="fa-brands fa-youtube"></i> ラズパイで作ったSuica残額チェッカー(画像)</a></p>
+                <p><a href="https://www.youtube.com/watch?v=YYYYYYYY" target="_blank"><i class="fa-brands fa-youtube"></i> Arduinoで作る早押しクイズボタン(動画)</a></p>
+                <p><a href="https://www.youtube.com/watch?v=YYYYYYYY" target="_blank"><i class="fa-brands fa-youtube"></i> iPadで出勤タイムカードアプリ作ってみた(動画)</a></p>
+                <p><a href="https://www.youtube.com/watch?v=YYYYYYYY" target="_blank"><i class="fa-brands fa-youtube"></i> もらったファミコンを音楽プレイヤーにしてみた(動画)</a></p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2><i class="fa-solid fa-address-book"></i> 講師の経歴</h2>
+            <img src="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/%E5%B1%8B%E5%A4%96%E3%81%AE%E9%BB%84%E8%89%B2%E3%81%84%E3%82%B9%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%90%E3%82%B9%E3%81%AE%E3%81%9D%E3%81%B0%E3%81%AB%E7%AB%8B%E3%81%A43%E4%BA%BA%E3%81%AE%E5%AD%90%E3%81%A9%E3%82%82%E3%81%9F%E3%81%A1-BC-1cQV68As" alt="講師の写真" style="float:left; margin-right: 1em; border-radius: 50%;"><br>
+            <ul class="fee-list">
+                <li>鈴木</li>
+                <li>1989年 神奈川県茅ケ崎市生まれ</li>
+                <li>大学卒業後、プリンタの組み込みプログラマとして勤務</li>
+                <li>2026年 副業としてプログラミング教室を運営。講師は私1人です。</li>
+                <li>趣味はランニングと電子工作。2児のパパ</li>
+            </ul>
+        </section>
+        <section class="section contact">
+            <h2><i class="fa-solid fa-envelope"></i> お問い合わせ</h2>
+            <p>ご質問・ご相談などお気軽にどうぞ。<br>
+            <b>フォーム：</b> <a href="https://forms.gle/9Tc6xCPEHHxhoS1d6">こちらをクリック</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2026 吹上プログラミング教室
+    </footer>
+</body>
+</html>
